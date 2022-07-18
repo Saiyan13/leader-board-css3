@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Lato:ital,wght@0,300;1,400&family=Poppins:ital,wght@0,100;0,500;1,100&family=The+Nautigal:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.section-title{
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 3px;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.top-players{
+    /* background-color: white;
+    width: 870px;
+    padding: 30px; */
+
+}
+
+/* top players style */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px;
+    margin-bottom: 30px;
+    
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+
+    margin-left: 10px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid;
+    margin-bottom: 27px;
+    
+}
+
+
+/* Top-Blogs */
+
+
+.blogs{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-row-gap: 26px;
+}
+
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog{
+    display: flex;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px
+}
+.author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.author a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#562EFF;
+}
+
+
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.saiyan{
+    color: #858072;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+
+/* -----------------------------Media-Queries----------------------------- */
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .players{
+        background-color: blueviolet;
+    }
+    .blogs, .courses{
+        display: none;
+    }
+    
+}
